@@ -1,10 +1,12 @@
 
-module.exports = (app) => {
+module.exports = (application) => {
 
-    app.get('/noticia', (req, res) => {
+    application.get('/noticia', (req, res) => {
 
-        let connection = app.config.dataBaseConnection();
-        connection.query('select * from noticias where idnoticias = 1', (err, result) => {
+        let connection = application.config.dataBaseConnection();
+        let noticiasModel = application.app.models.noticias;
+
+        noticiasModel.getNoticia(connection, (err, result) => {
             res.render('noticias/noticia', {noticia : result});
         });
 
