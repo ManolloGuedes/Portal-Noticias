@@ -2,7 +2,7 @@
 This project is a simple CRUD system based on a News Portal.
 This News Portal project was created as part of a Node.js study script.
 
-## Used technologies
+## Technologies used
 - Node.js
 - ejs (Embedded Javascript): used as view engine, EJS enables creation of HTML files using Javascript codes embedded
 - express: Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications
